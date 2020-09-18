@@ -1,0 +1,273 @@
+@import "_normalize";
+@import "_fonts";
+@import "_settings";
+
+
+/*section wr-home*/
+.wr-home {
+    background-color: #eff0f2;
+    position: relative;
+    z-index: 10;
+    height: 100vh;
+    header {
+        padding-top: 55px;
+        padding-bottom: 55px;
+            & .container-custom {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+                       
+            & .logo {
+                font-family: "MontserratBold", sans-serif;    
+                font-weight: 900;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: #000;
+                width: 112px;
+                height: 48px;  
+                display: flex;
+                align-items: center;
+                justify-content: center;                              
+                border: 6px solid #000;
+                box-sizing: border-box;         
+            } 
+            span {
+                font-family: "MontserratBold", sans-serif;
+                font-size: 23px;
+                color: #76f4ea;
+                padding-bottom: 5px;
+            }
+
+            /**menu burger**/
+            & .menu-burger{
+                display: block;
+            }
+            & .menu-btn {
+                width: 30px;
+                height: 30px;
+                border: none;
+                position: fixed;
+                top: 75px;
+                right: 70px;
+                cursor: pointer;
+                padding: 0;
+                z-index: 20;
+                background-color: transparent;
+            }
+            
+            & .menu-btn-lines {
+                display: block;
+                width: 100%;
+                height: 4px;
+                position: absolute; 
+                transition-duration: 0.5s;                              
+                padding-bottom: 0;
+                background-color: #505050;
+                    &::after,
+                    &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    transition-duration: 0.5s;                    
+                    width: 100%;
+                    height: 4px;
+                    background-color:  #505050;                                                     
+                }
+                &::after {
+                    content: "";
+                    top: 8px;
+                }
+                &::before {
+                    content: "";
+                    top: -8px;
+                }               
+            }
+            nav {
+                display: block;
+                opacity: 0;
+                ul {
+                    display: block;
+                    width: 30%;
+                    height: 100%;
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    text-align: center;
+                    margin: 0;
+                    padding-top: 100px;
+                    background-color: #eff0f2;
+                    z-index: 10;
+                }
+            }            
+            nav li {
+                font-size: 26px;
+                list-style-type: none;
+                margin-bottom: 20px;               
+            } 
+            nav a {
+                font-weight: 600;
+                color: #505050;
+            }
+            nav a:hover {
+                color:  #76f4ea;
+            }         
+            
+    }
+    
+    .wr-intro {
+        margin-top: 16vh;        
+            & .container-custom {
+                display: flex;    
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+            }    
+            p { 
+                font-family: "MontserratBold", sans-serif;    
+                font-weight: 800;
+                font-size: 45px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                text-shadow: 6px 8px 8px #C2C2C2;        
+                margin-bottom: 10px;
+                margin-top: 0;
+                color: #505050;
+                &::before {
+                    content: "";
+                    width: 22%;
+                    height: 55px;
+                    position: absolute;
+                    top: 5px;
+                    right: 265px;
+                    z-index: -5;
+                    background-color: #b2f2ee;
+                }
+                
+            }                         
+            a {
+                font-family: "MontserratReg", sans-serif;
+                font-weight: 600;
+                letter-spacing: 3px;    
+                text-transform: uppercase;
+                width: 230px;
+                height: 55px;
+                display: flex;
+                align-items: center;
+                justify-content: center;  
+                color: #3c3c3d;
+                border: 3px solid #777879;
+                box-sizing: border-box;                   
+                &:hover {
+                    box-shadow: 0 0 10px #777879;
+                }
+            }
+            
+            & .glass-icon {
+                position: absolute; 
+                overflow: hidden;             
+                height: 85px;
+                width: 75px;
+                bottom: -50px;
+                right: 110px; 
+            }        
+    }
+}
+
+/*section wr-aboutUs*/
+.wr-about-us {
+    padding-top: 92px;
+    padding-bottom: 100px;    
+    background-color: #f8fafa; 
+     
+    & .about-us-content {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+        position: relative;               
+                
+        & .description {
+            max-width: 50%;            
+            padding-left: 100px;
+            box-sizing: border-box;    
+        }
+     
+        h3, h4 {
+            font-family: "MerriBold", serif;
+            text-transform: uppercase;                      
+        }
+        h3{
+            font-size: 18px;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+            margin-top: 5px; 
+        }
+        h4 {
+            font-size: 17px;
+            letter-spacing: 1px;
+            word-spacing: 1px;
+            box-sizing: border-box;
+            padding-top: 15px;
+            margin-bottom: 10px;    
+        }
+        p {
+            font-family: "RalewayReg", sans-serif;
+            line-height: 30px;
+            letter-spacing: 1px;            
+        }
+
+        & .wr-slider {
+            width: 34.5%;            
+        }
+        & .slider-bg {
+            width: 100%;                    
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 35px;
+                left: 35px;
+                width: 478px;
+                height: 412px;
+                background-color: #eff0f2;             
+            }
+        }
+        & .slider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            left: 35px;
+            bottom: 20px;
+            z-index: 10;            
+            box-shadow: 0px 0px 20px #e4e5e8;            
+        }      
+            
+        & .slide-preview {
+            width: 393px;
+            height: 483px;
+            overflow: hidden;
+        }        
+    }
+    & .slick-dots {
+        bottom: -60px;
+        li {
+            width: 10px;
+            height: 10px;
+            margin: 0 2px;
+            background-color: #d0d0d0;
+            border-radius: 30%;
+                &:hover {
+                    background-color: #71f6eb;
+                }
+            button {
+                &::before{
+                    opacity: 0; 
+                }
+            }
+                      
+        }
+    }
+}
+ 
