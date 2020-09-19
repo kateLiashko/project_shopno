@@ -708,15 +708,20 @@ img {
 }
 
 /*section wr-works*/
-.image-works {
+.wr-works .wr-title {
+  margin-bottom: 105px;
+}
+.wr-works .image-works {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex: wrap;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
-.image-works picture {
-  width: 375px;
+.wr-works .image-works picture {
+  max-width: 375px;
   height: 360px;
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

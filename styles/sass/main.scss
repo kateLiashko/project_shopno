@@ -270,14 +270,22 @@
     }
 }
 
-/*section wr-works*/ 
-.image-works {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: wrap;
-    picture {
-        width: 375px;
-        height: 360px;
+/*section wr-works*/
+.wr-works{
+    .wr-title{
+        margin-bottom: 105px;
     }
-}
+    .image-works {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        picture {
+            max-width: 375px;
+            height: 360px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+    }
+} 
+
