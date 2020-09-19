@@ -618,7 +618,7 @@ img {
   right: 110px;
 }
 
-/*section wr-aboutUs*/
+/*section wr-about-us*/
 .wr-about-us {
   padding-top: 92px;
   padding-bottom: 100px;
@@ -705,6 +705,18 @@ img {
 }
 .wr-about-us .slick-dots li button::before {
   opacity: 0;
+}
+
+/*section wr-works*/
+.image-works {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: wrap;
+}
+.image-works picture {
+  width: 375px;
+  height: 360px;
 }
 
 /*# sourceMappingURL=main.css.map */
