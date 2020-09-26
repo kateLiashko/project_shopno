@@ -9,6 +9,7 @@
     <!--slick slider-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"/>
     <link rel="stylesheet" href="./styles/css/main.css">
 </head>
 
@@ -21,13 +22,13 @@
                     <button class="menu-btn">
                     <span class="menu-btn-lines"></span>
                     </button>                              <nav>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Works</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Contact</a></li>
+                        <ul class="menu-box">
+                            <li><a class="menu-item" href="#">Home</a></li>
+                            <li><a class="menu-item" href="#">About Us</a></li>
+                            <li><a class="menu-item" href="#">Works</a></li>
+                            <li><a class="menu-item" href="#">Services</a></li>
+                            <li><a class="menu-item" href="#">Team</a></li>
+                            <li><a class="menu-item" href="#">Contact</a></li>
                         </ul>
                     </nav>
                 </div> 
@@ -88,8 +89,8 @@
                 <p class="section-subtitle">Lorem ipsum dolor sit amet event landing template</p>                
             </div>
             <section class="gallery-works">
-                <div class="work image1">
-                    <a href="./media/image/works/work1.jpg">
+                <div class="work">
+                    <a data-fancybox="gallery"  href="./media/image/works/work1.jpg">
                         <picture>
                             <source srcset="./media/image/works/work1.webp"
                             type="image/webp">           
@@ -98,8 +99,8 @@
                         </picture>
                     </a>
                 </div>
-                <div class="work image2">
-                    <a href="./media/image/works/work2.jpg">
+                <div class="work">
+                    <a data-fancybox="gallery"  href="./media/image/works/work2.jpg">
                         <picture>
                             <source srcset="./media/image/works/work2.webp"
                             type="image/webp">           
@@ -108,8 +109,8 @@
                         </picture> 
                     </a>
                 </div>
-                <div class="work image3">
-                    <a href="./media/image/works/work3.jpg"> 
+                <div class="work">
+                    <a data-fancybox="gallery"  href="./media/image/works/work3.jpg"> 
                         <picture>
                             <source srcset="./media/image/works/work3.webp"
                             type="image/webp">           
@@ -118,8 +119,8 @@
                         </picture> 
                     </a>
                 </div>
-                <div class="work image4">
-                    <a href="./media/image/works/work4.jpg"> 
+                <div class="work">
+                    <a data-fancybox="gallery"  href="./media/image/works/work4.jpg"> 
                         <picture>
                             <source srcset="./media/image/works/work4.webp"
                             type="image/webp">           
@@ -128,8 +129,8 @@
                         </picture>
                     </a>
                 </div> 
-                <div class="work image5">
-                    <a href="./media/image/works/work5.jpg">
+                <div class="work">
+                    <a data-fancybox="gallery"  href="./media/image/works/work5.jpg">
                         <picture>
                             <source srcset="./media/image/works/work5.webp"
                             type="image/webp">           
@@ -138,8 +139,8 @@
                         </picture>
                     </a>
                 </div> 
-                <div class="work image6">
-                    <a href="./media/image/works/work6.jpg">
+                <div class="work">
+                    <a data-fancybox="gallery"  href="./media/image/works/work6.jpg">
                         <picture>
                             <source srcset="./media/image/works/work6.webp"
                             type="image/webp">           
@@ -161,83 +162,83 @@
                 <p class="section-subtitle">Lorem ipsum dolor sit amet event landing template</p>                
             </div>
             <section class="services-content">
-                <div class="service-preview1">
+                <div class="wr-preview service-preview1">
                     
                     <div class="service-information1">
                         <h3>Designing is the cool for</h3>
                         <p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most..</p>
-                        <a href="#">Know more &#8594;</a>
+                        <a href="#">Know more<svg viewBox="0 0 15.698 8.706"><polygon points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "/></svg></a>
                         
                     </div>
-                    <div class="service-description1">
-                        <h3>Designing is the cool love for.</h3>
+                    <div class="wr-description service-description1">
+                        <h4>Designing is the cool love for.</h4>
                         <p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.</p>
                         <button class="close-btn"><span class="close-btn-line"></span></button>
                     </div> 
 
                 </div>
-                <div class="service-preview2">
+                <div class="wr-preview service-preview2">
                     
                     <div class="service-information2">
                         <h3>Cool psd design</h3>
                         <p>Our most popular service is our we know that sometimes it’s something and you middle most.</p>
-                        <a href="#">Know more &#8594;</a>
+                        <a href="#">Know more<svg viewBox="0 0 15.698 8.706"><polygon points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "/></svg></a>
                     </div>
-                    <div class="service-description2">
-                        <h3>Designing is the cool love for.</h3>
-                        <p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.</p>
+                    <div class="wr-description service-description2">
+                        <h4>Designing is the cool love for.</h4>
+                        <p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you.</p>
                         <button class="close-btn"><span class="close-btn-line"></span></button>
                     </div>
                 </div>
-                <div class="service-preview3">
+                <div class="wr-preview service-preview3">
                     
                     <div class="service-information3">
                         <h3>Designing is the cool</h3>
                         <p>Our most popular service is our Virtual Receptionist. We know that..</p>
-                        <a href="#">Know more &#8594;</a>
+                        <a href="#">Know more<svg viewBox="0 0 15.698 8.706"><polygon points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "/></svg></a>
                     </div>
-                    <div class="service-description3">
-                        <h3>Designing is the cool love for.</h3>
+                    <div class="wr-description service-description3">
+                        <h4>Designing is the cool love for.</h4>
                         <p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.</p>
                         <button class="close-btn"><span class="close-btn-line"></span></button>
                     </div>
                 </div>
 
-                <div class="service-preview4">
+                <div class="wr-preview service-preview4">
                     
                     <div class="service-information4">
                         <h3>PSD to HTML kori</h3>
                         <p>We know that sometimes it’s something and you middle most..</p>
-                        <<a href="#">Know more &#8594;</a>
+                        <a href="#">Know more<svg viewBox="0 0 15.698 8.706"><polygon points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "/></svg></a>
                     </div>
-                    <div class="service-description4">
-                        <h3>Designing is the cool love for.</h3>
-                        <p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.</p>
+                    <div class="wr-description service-description4">
+                        <h4>Designing is the cool love for.</h4>
+                        <p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you.</p>
                         <button class="close-btn"><span class="close-btn-line"></span></button>
                     </div>
                 </div>
-                <div class="service-preview5">
+                <div class="wr-preview service-preview5">
                     
                     <div class="service-information5">
                         <h3>Cool psd design</h3>
                         <p>Our most popular service is our new virtual Receptionist you middle most..</p>
-                        <a href="#">Know more &#8594;</a>
+                        <a href="#">Know more<svg viewBox="0 0 15.698 8.706"><polygon points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "/></svg></a>
                     </div>
-                    <div class="service-description5">
-                        <h3>Designing is the cool love for.</h3>
-                        <p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.</p>
+                    <div class="wr-description service-description5">
+                        <h4>Designing is the cool love for.</h4>
+                        <p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you.</p>
                         <button class="close-btn"><span class="close-btn-line"></span></button>
                     </div>
                 </div>
-                <div class="service-preview6">
+                <div class="wr-preview service-preview6">
                     
                     <div class="service-information6">
                         <h3>Designing is the cool for</h3>
                         <p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most..</p>
-                        <a href="#">Know more &#8594;</a>
+                        <a href="#">Know more<svg viewBox="0 0 15.698 8.706"><polygon points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "/></svg></a>
                     </div>
-                    <div class="service-description6">
-                        <h3>Designing is the cool love for.</h3>
+                    <div class="wr-description service-description6">
+                        <h4>Designing is the cool love for.</h4>
                         <p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.</p>
                         <button class="close-btn"><span class="close-btn-line"></span></button>
                     </div> 
@@ -252,6 +253,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
 
     <script src="./js/main.js"></script>
 </body>
