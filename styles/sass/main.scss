@@ -354,7 +354,7 @@
                 z-index: -5;
             }
             &:hover .wr-description {
-                display: block;
+                display: block;                
             }
             h3 {
                 font-family: "MerriBold", serif;
@@ -527,6 +527,9 @@
             cursor: pointer;
             padding: 0;                
             background-color: transparent;
+            &:focus {
+                outline: none;
+            }
         }
 
         & .close-btn-line {
@@ -558,3 +561,97 @@
     }
 }
 
+/*section wr-team*/
+.wr-team {
+    padding-top: 92px;
+    padding-bottom: 100px; 
+    & .wr-title {
+        margin-bottom: 105px;       
+    }
+    & .section-workers {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        & .worker {
+            width: 375px;
+            height: 441px; 
+            position: relative;           
+            margin-bottom: 10px;
+            &:hover .worker-feedback {
+                opacity: 1;                
+            }
+        }
+        & .worker-feedback {
+            width: 335px;
+            height: 242px;
+            display: flex;            
+            align-items: center;
+            flex-wrap: wrap;
+            position: absolute;
+            left: 20px;
+            bottom: 20px;            
+            opacity: 0;
+            background-color: #6df6eb;
+            span {
+                width: 0;
+                height: 0;
+                position: absolute;
+                top: -17px;
+                left: 22px;
+	            border-left: 12px solid transparent;
+	            border-right: 12px solid transparent;
+	            border-bottom: 20px solid #6df6eb;                
+            } 
+            ul {
+                display: flex;
+                margin-bottom: 30px;                
+            } 
+            li {
+                margin-right: 15px;
+            }
+            & .worker-name{
+                font-family: "MerriBold", serif;
+                font-size: 21px;
+                text-transform: uppercase;
+                color: #000;
+                word-spacing: 2px;
+                margin-top: 35px;
+                margin-right: 5px;
+                margin-bottom: 0;
+                padding-left: 40px;
+            } 
+            & .worker-position{
+                font-family: "MerriBold", serif;
+                font-style: oblique;
+                color: #767776;
+                word-spacing: 2px;
+                margin-top: 35px;
+                margin-bottom: 0;
+            }
+            & .feedback {
+                font-family: 'RalewayReg', sans-serif;
+                line-height: 1.6;                
+                word-spacing: 2px;
+                padding: 0 40px;
+                margin: 0;
+            }         
+        }
+        & .svg-facebook {
+            height: 13px;
+            fill: #505050;;
+        }
+        & .svg-twitter {
+            height: 13px;
+            fill: #505050;;
+        }
+        & .svg-website {
+            height: 13px;
+            fill: #505050;;
+        }
+        & .svg-email {
+            height: 14px;
+            fill: #505050;;
+        }
+    }
+}

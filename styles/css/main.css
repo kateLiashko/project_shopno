@@ -455,6 +455,10 @@ img {
   background-color: #b2b19e;
 }
 
+ul {
+  list-style: none;
+}
+
 /*section wr-home*/
 .wr-home {
   background-color: #eff0f2;
@@ -941,6 +945,9 @@ img {
   padding: 0;
   background-color: transparent;
 }
+.wr-services .services-content .close-btn:focus {
+  outline: none;
+}
 .wr-services .services-content .close-btn-line {
   display: block;
   width: 100%;
@@ -964,6 +971,101 @@ img {
 .wr-services .services-content .close-btn-line::before {
   content: "";
   transform: rotate(-45deg);
+}
+
+/*section wr-team*/
+.wr-team {
+  padding-top: 92px;
+  padding-bottom: 100px;
+}
+.wr-team .wr-title {
+  margin-bottom: 105px;
+}
+.wr-team .section-workers {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.wr-team .section-workers .worker {
+  width: 375px;
+  height: 441px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.wr-team .section-workers .worker:hover .worker-feedback {
+  opacity: 1;
+}
+.wr-team .section-workers .worker-feedback {
+  width: 335px;
+  height: 242px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  opacity: 0;
+  background-color: #6df6eb;
+}
+.wr-team .section-workers .worker-feedback span {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -17px;
+  left: 22px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 20px solid #6df6eb;
+}
+.wr-team .section-workers .worker-feedback ul {
+  display: flex;
+  margin-bottom: 30px;
+}
+.wr-team .section-workers .worker-feedback li {
+  margin-right: 15px;
+}
+.wr-team .section-workers .worker-feedback .worker-name {
+  font-family: "MerriBold", serif;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #000;
+  word-spacing: 2px;
+  margin-top: 35px;
+  margin-right: 5px;
+  margin-bottom: 0;
+  padding-left: 40px;
+}
+.wr-team .section-workers .worker-feedback .worker-position {
+  font-family: "MerriBold", serif;
+  font-style: oblique;
+  color: #767776;
+  word-spacing: 2px;
+  margin-top: 35px;
+  margin-bottom: 0;
+}
+.wr-team .section-workers .worker-feedback .feedback {
+  font-family: "RalewayReg", sans-serif;
+  line-height: 1.6;
+  word-spacing: 2px;
+  padding: 0 40px;
+  margin: 0;
+}
+.wr-team .section-workers .svg-facebook {
+  height: 13px;
+  fill: #505050;
+}
+.wr-team .section-workers .svg-twitter {
+  height: 13px;
+  fill: #505050;
+}
+.wr-team .section-workers .svg-website {
+  height: 13px;
+  fill: #505050;
+}
+.wr-team .section-workers .svg-email {
+  height: 14px;
+  fill: #505050;
 }
 
 /*# sourceMappingURL=main.css.map */
