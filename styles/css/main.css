@@ -1008,7 +1008,8 @@ ul {
   opacity: 0;
   background-color: #6df6eb;
 }
-.wr-team .section-workers .worker-feedback span {
+.wr-team .section-workers .worker-feedback::before {
+  content: "";
   width: 0;
   height: 0;
   position: absolute;
@@ -1027,7 +1028,7 @@ ul {
 }
 .wr-team .section-workers .worker-feedback .worker-name {
   font-family: "MerriBold", serif;
-  font-size: 21px;
+  font-size: 20px;
   text-transform: uppercase;
   color: #000;
   word-spacing: 2px;
@@ -1066,6 +1067,139 @@ ul {
 .wr-team .section-workers .svg-email {
   height: 14px;
   fill: #505050;
+}
+
+/*section wr-characteristic*/
+.wr-characteristic {
+  padding-top: 92px;
+  padding-bottom: 100px;
+  background-color: #f9fbfb;
+}
+.wr-characteristic .wr-title {
+  margin-bottom: 85px;
+}
+.wr-characteristic .characteristic-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wr-characteristic .characteristic-preview {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.wr-characteristic .characteristic-preview .image-bg {
+  width: 40%;
+  height: 412px;
+  margin-right: 65px;
+  position: relative;
+}
+.wr-characteristic .characteristic-preview .image-bg::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 2px;
+  width: 390px;
+  height: 362px;
+  background-color: #eff0f2;
+}
+.wr-characteristic .characteristic-preview .slide-img {
+  width: 320px;
+  height: 412px;
+  overflow: hidden;
+  position: absolute;
+  top: -11px;
+  left: 36px;
+  z-index: 5;
+  box-shadow: 0px 0px 20px #e4e5e8;
+}
+.wr-characteristic .characteristic-preview .slide-description {
+  width: 65%;
+  padding-top: 15px;
+}
+.wr-characteristic .characteristic-preview .description-bg {
+  width: 100%;
+  height: 362px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #ecedef;
+}
+.wr-characteristic .characteristic-preview .worker-name {
+  font-family: "MerriBold", serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  margin-top: 90px;
+  margin-right: 5px;
+  margin-bottom: 0;
+  padding-left: 40px;
+}
+.wr-characteristic .characteristic-preview .worker-position {
+  font-family: "MerriBold", serif;
+  font-size: 14px;
+  font-style: oblique;
+  text-transform: uppercase;
+  color: #767776;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  margin-top: 90px;
+  margin-bottom: 0;
+}
+.wr-characteristic .characteristic-preview .description {
+  font-family: "RalewayReg", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  line-height: 1.7;
+  padding: 0px 85px;
+  margin-top: 0;
+  margin-bottom: 85px;
+}
+.wr-characteristic .slick-dots {
+  width: 10%;
+  bottom: 0;
+  left: 142px;
+}
+.wr-characteristic .slick-dots li {
+  width: 10px;
+  height: 10px;
+  margin: 0 2px;
+  background-color: #d0d0d0;
+  border-radius: 30%;
+}
+.wr-characteristic .slick-dots li:hover {
+  background-color: #71f6eb;
+}
+.wr-characteristic .slick-dots li button::before {
+  opacity: 0;
+}
+.wr-characteristic .slick-prev, .wr-characteristic .slick-next {
+  width: 53px;
+  height: 53px;
+  top: 94%;
+  border-radius: 10%;
+  background-color: #fff;
+  box-shadow: 6px 8px 8px #e4e5e8;
+}
+.wr-characteristic .slick-prev {
+  left: 88%;
+  z-index: 5;
+}
+.wr-characteristic .slick-prev:hover {
+  background-color: #71f6eb;
+}
+.wr-characteristic .slick-next {
+  right: 0;
+}
+.wr-characteristic .slick-next:hover {
+  background-color: #71f6eb;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -593,7 +593,8 @@
             bottom: 20px;            
             opacity: 0;
             background-color: #6df6eb;
-            span {
+            &::before {
+                content: '';
                 width: 0;
                 height: 0;
                 position: absolute;
@@ -612,7 +613,7 @@
             }
             & .worker-name{
                 font-family: "MerriBold", serif;
-                font-size: 21px;
+                font-size: 20px;
                 text-transform: uppercase;
                 color: #000;
                 word-spacing: 2px;
@@ -654,4 +655,142 @@
             fill: #505050;;
         }
     }
+}
+
+/*section wr-characteristic*/
+.wr-characteristic {
+    padding-top: 92px;
+    padding-bottom: 100px;
+    background-color: #f9fbfb;
+    & .wr-title {
+        margin-bottom: 85px;       
+    } 
+    & .characteristic-slider {        
+        display: flex;
+        justify-content: center;
+        align-items: center;       
+    }    
+    & .characteristic-preview {
+        display: flex;
+        justify-content: space-between;     
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 50px;
+        & .image-bg { 
+            width: 40%;           
+            height: 412px;
+            margin-right: 65px;
+            position: relative;                                
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 15px;
+                left: 2px;
+                width: 390px;
+                height: 362px;
+                background-color: #eff0f2;       
+            }
+        }
+        & .slide-img {
+            width: 320px;
+            height: 412px;
+            overflow: hidden;
+            position: absolute;
+            top: -11px;
+            left: 36px;
+            z-index: 5;
+            box-shadow: 0px 0px 20px #e4e5e8;
+        }
+        & .slide-description {
+            width: 65%;            
+            padding-top: 15px;                                            
+        }
+        & .description-bg {
+            width: 100%;
+            height: 362px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #ecedef;
+            
+        }
+        & .worker-name{
+            font-family: "MerriBold", serif;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: #000;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            margin-top: 90px;
+            margin-right: 5px;
+            margin-bottom: 0;
+            padding-left: 40px;
+        } 
+        & .worker-position {
+            font-family: "MerriBold", serif;
+            font-size: 14px;
+            font-style: oblique;
+            text-transform: uppercase;
+            color: #767776;
+            word-spacing: 2px;            
+            letter-spacing: 2px;
+            margin-top: 90px;
+            margin-bottom: 0;
+        }
+        & .description {
+            font-family: 'RalewayReg', sans-serif;
+            text-align: center;
+            letter-spacing: 1px;
+            word-spacing: 1px;
+            line-height: 1.7;
+            padding: 0px 85px;
+            margin-top: 0;
+            margin-bottom: 85px;            
+        }
+    }
+    & .slick-dots {
+        width: 10%;
+        bottom: 0;
+        left: 142px;
+        li {
+            width: 10px;
+            height: 10px;
+            margin: 0 2px;
+            background-color: #d0d0d0;
+            border-radius: 30%;
+                &:hover {
+                    background-color: #71f6eb;
+                }
+            button {
+                &::before{
+                    opacity: 0; 
+                }
+            }
+                      
+        }
+    }
+    & .slick-prev,
+    & .slick-next {
+        width: 53px;
+        height: 53px;
+        top: 94%;
+        border-radius: 10%;
+        background-color: #fff;
+        box-shadow: 6px 8px 8px #e4e5e8;        
+    }
+    & .slick-prev {
+        left: 88%;
+        z-index: 5;
+        &:hover {
+            background-color: #71f6eb; 
+        }        
+    }    
+    & .slick-next {
+        right: 0;
+        &:hover {
+            background-color: #71f6eb; 
+        }        
+    }        
 }

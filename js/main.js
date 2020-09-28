@@ -32,6 +32,15 @@ $('.slider').slick({
     cssEase: 'linear'  
 });
 
-/*gallery section-works*/
+/*slider section-wr-characteristic*/
 
-
+$('.characteristic-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'  
+});
