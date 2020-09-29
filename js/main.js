@@ -32,6 +32,9 @@ $('.slider').slick({
     cssEase: 'linear'  
 });
 
+/*section wr-services info-btn*/
+
+
 /*slider section-wr-characteristic*/
 
 $('.characteristic-slider').slick({

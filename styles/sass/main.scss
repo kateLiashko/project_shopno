@@ -353,9 +353,9 @@
                 background-color: rgba(0,0,0,.4);
                 z-index: -5;
             }
-            &:hover .wr-description {
+            /**&:hover .wr-description {
                 display: block;                
-            }
+            }**/
             h3 {
                 font-family: "MerriBold", serif;
                 font-size: 20px;
@@ -370,12 +370,18 @@
                 color: #f9fbfb;
                 line-height: 1.5;            
             } 
-            a {
+            & .info-btn {
                 font-family: "RalewayMedium", sans-serif;
                 font-size: 18px;
                 text-transform: uppercase; 
                 letter-spacing: 1px;           
                 color: #f9fbfb;
+                border: none;
+                cursor: pointer;
+                background-color: transparent;
+                &:focus {
+                    outline: none;
+                }               
             }               
             svg {
                 height: 14px;
@@ -714,7 +720,16 @@
             align-items: center;
             flex-wrap: wrap;
             background-color: #ecedef;
-            
+            & .stars-icon {
+                display: flex;
+                align-items: center;
+                margin-bottom: 55px;
+            }
+            svg {
+                width: 17px;
+                fill: gold;
+                margin-right: 5px;
+            }
         }
         & .worker-name{
             font-family: "MerriBold", serif;
@@ -747,7 +762,7 @@
             line-height: 1.7;
             padding: 0px 85px;
             margin-top: 0;
-            margin-bottom: 85px;            
+            margin-bottom: 5px;            
         }
     }
     & .slick-dots {
@@ -765,6 +780,7 @@
                 }
             button {
                 &::before{
+                    content: '';
                     opacity: 0; 
                 }
             }
@@ -785,12 +801,34 @@
         z-index: 5;
         &:hover {
             background-color: #71f6eb; 
-        }        
+        }
+        &::before  {
+            content: '';
+            display: block;
+            width: 15px;            
+            height: 30px;
+            opacity: 1;
+            position: absolute;
+            top: 25%;
+            left: 35%;
+            background-image: url("../../media/icons/angle-left-slider.svg");
+        }              
     }    
     & .slick-next {
         right: 0;
         &:hover {
             background-color: #71f6eb; 
-        }        
+        } 
+        &::before  {
+            content: '';
+            display: block;
+            width: 15px;            
+            height: 30px;
+            opacity: 1;
+            position: absolute;
+            top: 25%;
+            left: 40%;
+            background-image: url("../../media/icons/angle-right-slider.svg");
+        }      
     }        
 }

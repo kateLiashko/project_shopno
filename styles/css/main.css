@@ -781,6 +781,9 @@ ul {
   margin-bottom: 10px;
   position: relative;
   z-index: 5;
+  /**&:hover .wr-description {
+      display: block;                
+  }**/
 }
 .wr-services .services-content .wr-preview::after {
   content: "";
@@ -791,9 +794,6 @@ ul {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: -5;
-}
-.wr-services .services-content .wr-preview:hover .wr-description {
-  display: block;
 }
 .wr-services .services-content .wr-preview h3 {
   font-family: "MerriBold", serif;
@@ -809,12 +809,18 @@ ul {
   color: #f9fbfb;
   line-height: 1.5;
 }
-.wr-services .services-content .wr-preview a {
+.wr-services .services-content .wr-preview .info-btn {
   font-family: "RalewayMedium", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #f9fbfb;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.wr-services .services-content .wr-preview .info-btn:focus {
+  outline: none;
 }
 .wr-services .services-content .wr-preview svg {
   height: 14px;
@@ -1129,6 +1135,16 @@ ul {
   flex-wrap: wrap;
   background-color: #ecedef;
 }
+.wr-characteristic .characteristic-preview .description-bg .stars-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 55px;
+}
+.wr-characteristic .characteristic-preview .description-bg svg {
+  width: 17px;
+  fill: gold;
+  margin-right: 5px;
+}
 .wr-characteristic .characteristic-preview .worker-name {
   font-family: "MerriBold", serif;
   font-size: 20px;
@@ -1160,7 +1176,7 @@ ul {
   line-height: 1.7;
   padding: 0px 85px;
   margin-top: 0;
-  margin-bottom: 85px;
+  margin-bottom: 5px;
 }
 .wr-characteristic .slick-dots {
   width: 10%;
@@ -1178,6 +1194,7 @@ ul {
   background-color: #71f6eb;
 }
 .wr-characteristic .slick-dots li button::before {
+  content: "";
   opacity: 0;
 }
 .wr-characteristic .slick-prev, .wr-characteristic .slick-next {
@@ -1195,11 +1212,33 @@ ul {
 .wr-characteristic .slick-prev:hover {
   background-color: #71f6eb;
 }
+.wr-characteristic .slick-prev::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 30px;
+  opacity: 1;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  background-image: url("../../media/icons/angle-left-slider.svg");
+}
 .wr-characteristic .slick-next {
   right: 0;
 }
 .wr-characteristic .slick-next:hover {
   background-color: #71f6eb;
+}
+.wr-characteristic .slick-next::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 30px;
+  opacity: 1;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  background-image: url("../../media/icons/angle-right-slider.svg");
 }
 
 /*# sourceMappingURL=main.css.map */
