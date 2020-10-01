@@ -585,7 +585,8 @@
             position: relative;           
             margin-bottom: 10px;
             &:hover .worker-feedback {
-                opacity: 1;                
+                opacity: 1;
+                transition: .5s;                
             }
         }
         & .worker-feedback {
@@ -644,19 +645,19 @@
                 margin: 0;
             }         
         }
-        & .svg-facebook {
+        & .icon-facebook {
             height: 13px;
             fill: #505050;;
         }
-        & .svg-twitter {
+        & .icon-twitter {
             height: 13px;
             fill: #505050;;
         }
-        & .svg-website {
+        & .icon-website {
             height: 13px;
             fill: #505050;;
         }
-        & .svg-email {
+        & .icon-email {
             height: 14px;
             fill: #505050;;
         }
@@ -775,7 +776,7 @@
             margin: 0 2px;
             background-color: #d0d0d0;
             border-radius: 30%;
-                &:hover {
+                &:hover {                    
                     background-color: #71f6eb;
                 }
             button {
@@ -800,6 +801,7 @@
         left: 88%;
         z-index: 5;
         &:hover {
+            transition: .5s;
             background-color: #71f6eb; 
         }
         &::before  {
@@ -817,6 +819,7 @@
     & .slick-next {
         right: 0;
         &:hover {
+            transition: .5s;
             background-color: #71f6eb; 
         } 
         &::before  {
@@ -831,4 +834,36 @@
             background-image: url("../../media/icons/angle-right-slider.svg");
         }      
     }        
+}
+
+/*section wr-clients*/
+
+.wr-clients {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    padding-top: 92px;
+    padding-bottom: 100px;    
+    & .wr-logo-top {
+        width: 50%;        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5px;
+        margin-bottom: 50px;
+        margin-left: 29%;   
+        & .logo {
+            margin-right: 95px;
+        }
+    }
+    & .wr-logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        & .logo {
+            margin-right: 85px;
+        }    
+    }
+        
 }

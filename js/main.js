@@ -35,6 +35,8 @@ $('.slider').slick({
 /*section wr-services info-btn*/
 
 
+
+
 /*slider section-wr-characteristic*/
 
 $('.characteristic-slider').slick({
