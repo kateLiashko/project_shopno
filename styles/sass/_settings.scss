@@ -23,38 +23,30 @@ h1 {
     font-size: 45px;
     font-weight: 800;
     text-transform: uppercase;
+    text-align: center;
     text-shadow: 6px 8px 8px #C2C2C2; 
-    letter-spacing: 2px;   
+    letter-spacing: 2px; 
+    line-height: 1.23;
+    white-space: pre-line;  
     margin-bottom: 18vh;
     margin-top: 0;
-    &::before {
-        content: "";
-        width: 20%;
-        height: 55px;
-        position: absolute;
-        top: 65px;
-        left: 85px;
-        z-index: -5;
-        background-color: #b2f2ee;
-    }
 }
 
-.wr-title {
+.title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 125px;
+    margin-bottom: 100px;
 }
 
 .section-title { 
     font-family: "MontserratBold", sans-serif; 
     font-size: 36px;
-    font-weight: 800;
+    font-weight: 900;
     text-transform: uppercase;    
     letter-spacing: 2px;
-    color: black;    
-    margin-top: 25px;
-    margin-bottom: 7px;
+    color: black;  
+    margin-bottom: 10px;
 }
 
 .section-subtitle {
@@ -62,8 +54,9 @@ h1 {
     font-size: 17px;
     word-spacing: 1px;
     letter-spacing: 2px;
+    word-spacing: 5px;
     text-transform: uppercase;
-    margin-top: 0;
+    margin: 0;
 }
 
 img {
