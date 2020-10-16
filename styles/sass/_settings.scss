@@ -28,8 +28,27 @@ h1 {
     letter-spacing: 2px; 
     line-height: 1.23;
     white-space: pre-line;  
-    margin-bottom: 18vh;
+    margin-bottom: 4vh;
     margin-top: 0;
+    position: relative;
+    & .top-akcent { 
+        width: 250px;
+        height: 55px;
+        position: absolute;
+        top: -3px;
+        right: 168px;
+        z-index: -5;
+        background-color: #b2f2ee;        
+    }
+    & .akcent {
+        width: 231px;
+        height: 55px;
+        position: absolute;
+        top: 56px;
+        left: -10px;
+        z-index: -5;
+        background-color: #b2f2ee;
+    }                        
 }
 
 .title {
@@ -45,7 +64,8 @@ h1 {
     font-weight: 900;
     text-transform: uppercase;    
     letter-spacing: 2px;
-    color: black;  
+    color: black; 
+    margin-top: 0; 
     margin-bottom: 10px;
 }
 

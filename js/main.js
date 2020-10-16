@@ -19,6 +19,7 @@ menuItem.forEach(function(btn) {
   });
 });
 
+
 /*fix header*/
 
 let header = document.querySelector('.header');
@@ -34,9 +35,27 @@ if(header) {
   }
 }
 
+
+/*scroll menu*/
+
+$("#menu-burger").on("click", "a", function (event) {
+  event.preventDefault();
+  let id  = $(this).attr('href'),
+      top = $(id).offset().top - 75 + 'px';
+  $('body,html').animate({scrollTop: top}, 900);
+});
+
+$("#home").on("click", "a", function (event) {
+  event.preventDefault();
+  let id  = $(this).attr('href'),
+      top = $(id).offset().top - 75 + 'px';
+  $('body,html').animate({scrollTop: top}, 900);
+});
+
+
 /*slider section-about-us*/
 
-$('.slider').slick({
+$('.about-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
@@ -47,7 +66,23 @@ $('.slider').slick({
     cssEase: 'linear'  
 });
 
+
 /*section wr-services info-btn*/
+
+let previewsContainer = document.querySelector('.services-content');
+
+previewsContainer.addEventListener('click', function (e){
+  if(!e.target.closest('button')) return;
+  
+  let btn = e.target.closest('button');
+  let parent = e.target.closest('.preview');
+
+  if (btn.className === 'info-btn') {
+      parent.classList.add('show');
+  } else {
+      parent.classList.remove('show');
+  }
+});
 
 
 
