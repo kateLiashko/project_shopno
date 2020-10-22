@@ -53,19 +53,14 @@ $("#home").on("click", "a", function (event) {
 });
 
 
-/*slider section-about-us*/
+/*slider swiper section-about-us*/
 
-$('.about-slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: true,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear'  
+var swiper = new Swiper('.swiper-container', {
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
 });
-
 
 /*section wr-services info-btn*/
 
@@ -84,10 +79,7 @@ previewsContainer.addEventListener('click', function (e){
   }
 });
 
-
-
-
-/*slider section-wr-characteristic*/
+/*slisk-slider section-wr-characteristic*/
 
 $('.characteristic-slider').slick({
     slidesToShow: 1,

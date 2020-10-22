@@ -41,13 +41,13 @@ function styles() {
 
 function images() {
     return src('app/media/image/**/*')
-    .pipe(newer('app/media/dest/'))
+    .pipe(newer('app/media/imagesmin/'))
     .pipe(imagemin())
-    .pipe(dest('app/media/dest/'));
+    .pipe(dest('app/media/imagesmin/'));
 }
 
 function cleanimg() {
-    return del('app/media/dest/**/*', { force: true });
+    return del('app/media/imagesmin/**/*', { force: true });
 }
 
 function cleandist() {

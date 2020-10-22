@@ -659,48 +659,40 @@ ul {
   background-color: #f8fafa;
 }
 
-.about-slider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.swiper-container {
   padding-top: 40px;
+  padding-bottom: 55px;
 }
-.about-slider .wr-slider {
+.swiper-container .swiper-pagination-bullets {
+  width: 45%;
+  left: 0;
+  bottom: -5px;
+}
+.swiper-container .swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 30%;
+  margin: 0 2px;
+  background-color: #d0d0d0;
+}
+.swiper-container .swiper-pagination-bullets .swiper-pagination-bullet:hover {
+  cursor: pointer;
+}
+.swiper-container .swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background-color: #71f6eb;
+}
+
+.wr-slider {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.about-slider .slick-slide:focus {
-  outline: none;
-}
-.about-slider .slick-dots {
-  width: 45%;
-  left: 0;
-  bottom: -55px;
-}
-.about-slider .slick-dots .slick-active {
-  background-color: #71f6eb;
-}
-.about-slider .slick-dots li {
-  width: 10px;
-  height: 10px;
-  margin: 0 2px;
-  border-radius: 30%;
-  background-color: #d0d0d0;
-}
-.about-slider .slick-dots li:hover {
-  background-color: #71f6eb;
-}
-.about-slider .slick-dots li button::before {
-  content: "";
-  opacity: 0;
-}
-
-.slider-bg {
+.wr-slider .slider-bg {
   width: 49%;
   position: relative;
 }
-.slider-bg::after {
+.wr-slider .slider-bg::after {
   content: "";
   display: block;
   position: absolute;
@@ -712,7 +704,7 @@ ul {
   background-color: #eff0f2;
   z-index: -5;
 }
-.slider-bg .slide-preview {
+.wr-slider .slide-preview {
   width: 393px;
   height: 483px;
   z-index: 5;
@@ -720,24 +712,23 @@ ul {
   margin: 0 auto;
   box-shadow: 0px 0px 20px #e4e5e8;
 }
-
-.our-description {
+.wr-slider .our-description {
   display: flex;
   flex-direction: column;
   max-width: 45%;
   box-sizing: border-box;
 }
-.our-description h3, .our-description h4 {
+.wr-slider .our-description h3, .wr-slider .our-description h4 {
   font-family: "MerriBold", serif;
   text-transform: uppercase;
 }
-.our-description h3 {
+.wr-slider .our-description h3 {
   font-size: 18px;
   letter-spacing: 2px;
   word-spacing: 4px;
   margin: 5px 0;
 }
-.our-description h4 {
+.wr-slider .our-description h4 {
   font-size: 17px;
   letter-spacing: 1px;
   word-spacing: 1px;
@@ -745,7 +736,7 @@ ul {
   padding-top: 10px;
   margin-bottom: 0;
 }
-.our-description p {
+.wr-slider .our-description p {
   font-family: "RalewayReg", sans-serif;
   white-space: pre-line;
   line-height: 29px;
@@ -755,7 +746,7 @@ ul {
 
 /*section wr-works*/
 .wr-works {
-  padding-top: 140px;
+  padding-top: 115px;
   padding-bottom: 100px;
 }
 .wr-works .title {
@@ -1148,7 +1139,7 @@ ul {
   border-radius: 30%;
 }
 .characteristic-slider .slick-dots li:hover {
-  background-color: #71f6eb;
+  cursor: pointer;
 }
 .characteristic-slider .slick-dots li button::before {
   content: "";
@@ -1179,7 +1170,7 @@ ul {
   position: absolute;
   top: 25%;
   left: 35%;
-  background-image: url("../../media/icons/angle-left-slider.svg");
+  background-image: url("../../media/image/icons/angle-left-slider.svg");
 }
 .characteristic-slider .slick-next {
   right: 5px;
@@ -1197,7 +1188,7 @@ ul {
   position: absolute;
   top: 25%;
   left: 40%;
-  background-image: url("../../media/icons/angle-right-slider.svg");
+  background-image: url("../../media/image/icons/angle-right-slider.svg");
 }
 
 .image-bg {
@@ -1620,8 +1611,8 @@ footer {
     left: 8%;
   }
 
-  .about-slider .slick-dots {
-    bottom: -30px;
+  .swiper-container .swiper-pagination-bullets {
+    bottom: 20px;
   }
 
   .slider-bg::after {
@@ -1673,16 +1664,23 @@ footer {
     left: 5%;
   }
 
-  .slider-bg {
+  .wr-slider .slider-bg {
     width: 45%;
   }
-  .slider-bg .slide-preview {
+  .wr-slider .slider-bg::after {
+    height: 75%;
+  }
+  .wr-slider .slider-bg .slide-preview {
     width: 373px;
     height: 473px;
   }
 
-  .our-description {
+  .wr-slider .our-description {
     max-width: 48%;
+  }
+
+  .swiper-container .swiper-pagination-bullets {
+    bottom: 35px;
   }
 
   .section-workers .worker {
@@ -1723,19 +1721,16 @@ footer {
     left: 1%;
   }
 
-  .about-slider .slick-dots {
-    bottom: 5px;
+  .swiper-container .swiper-pagination-bullets {
+    bottom: 30px;
   }
 
-  .slider-bg {
-    width: 45%;
-  }
-  .slider-bg .slide-preview {
-    width: 353px;
-    height: 473px;
-  }
-  .slider-bg::after {
+  .wr-slider .slider-bg::after {
     height: 65%;
+  }
+
+  .wr-slider .our-description {
+    max-width: 50%;
   }
 
   .services-content {
@@ -1780,31 +1775,29 @@ footer {
     padding-bottom: 50px;
   }
 
-  .about-slider .wr-slider {
+  .wr-slider {
     flex-direction: column;
     align-items: center;
   }
-
-  .slider-bg {
+  .wr-slider .slider-bg {
     width: 90%;
     margin-bottom: 80px;
   }
-  .slider-bg::after {
+  .wr-slider .slider-bg::after {
     width: 63%;
     height: 86%;
   }
-
-  .our-description {
+  .wr-slider .our-description {
     max-width: 90%;
     align-items: center;
   }
-  .our-description p {
+  .wr-slider .our-description p {
     text-align: center;
   }
 
-  .about-slider .slick-dots {
+  .swiper-container .swiper-pagination-bullets {
     left: 27%;
-    bottom: 42%;
+    bottom: 45%;
   }
 
   .gallery-works .work {
@@ -1870,11 +1863,14 @@ footer {
     padding-bottom: 50px;
   }
 
-  .about-slider .slick-dots {
-    bottom: 44%;
+  .swiper-container {
+    padding-bottom: 0;
+  }
+  .swiper-container .swiper-pagination-bullets {
+    bottom: 47%;
   }
 
-  .slider-bg::after {
+  .wr-slider .slider-bg::after {
     width: 66%;
   }
 
@@ -1975,7 +1971,7 @@ footer {
     text-align: center;
   }
 
-  .slider-bg::after {
+  .wr-slider .slider-bg::after {
     width: 72%;
   }
 
@@ -2075,7 +2071,7 @@ footer {
     left: 7%;
   }
 
-  .slider-bg::after {
+  .wr-slider .slider-bg::after {
     width: 82%;
   }
 
@@ -2231,12 +2227,12 @@ footer {
     left: 12%;
   }
 
-  .slider-bg::after {
+  .wr-slider .slider-bg::after {
     width: 95%;
   }
 
-  .about-slider .slick-dots {
-    bottom: 47%;
+  .swiper-container .swiper-pagination-bullets {
+    bottom: 50%;
   }
 }
 @media all and (max-width: 530px) {
@@ -2247,12 +2243,12 @@ footer {
     left: 9%;
   }
 
-  .slider-bg::after {
+  .wr-slider .slider-bg::after {
     width: 97%;
   }
 
-  .about-slider .slick-dots {
-    bottom: 48%;
+  .swiper-container .swiper-pagination-bullets {
+    bottom: 51%;
   }
 
   .section-workers .worker {
@@ -2275,12 +2271,15 @@ footer {
     left: 7%;
   }
 
-  .slider-bg::after {
+  .wr-slider .slider-bg::after {
     width: 99%;
   }
-
-  .our-description h3 {
+  .wr-slider .our-description h3 {
     text-align: center;
+  }
+
+  .swiper-container .swiper-pagination-bullets {
+    bottom: 52%;
   }
 
   .gallery-works .work {
@@ -2332,12 +2331,12 @@ footer {
     bottom: -30%;
   }
 
-  .slider-bg::after {
+  .wr-slider .slider-bg::after {
     width: 110%;
   }
 
-  .about-slider .slick-dots {
-    bottom: 51%;
+  .swiper-container .swiper-pagination-bullets {
+    bottom: 53%;
   }
 
   .section-workers .worker {
@@ -2414,13 +2413,13 @@ footer {
     bottom: -22%;
   }
 
-  .about-slider .slick-dots {
-    bottom: 56%;
-  }
-
-  .slider-bg .slide-preview {
+  .wr-slider .slider-bg .slide-preview {
     width: 333px;
     height: 410px;
+  }
+
+  .swiper-container .swiper-pagination-bullets {
+    bottom: 58%;
   }
 
   .form .main-form button {
@@ -2441,13 +2440,13 @@ footer {
     left: 27%;
   }
 
-  .about-slider .slick-dots {
-    bottom: 58%;
-  }
-
-  .slider-bg .slide-preview {
+  .wr-slider .slider-bg .slide-preview {
     width: 295px;
     height: 370px;
+  }
+
+  .swiper-container .swiper-pagination-bullets {
+    bottom: 61%;
   }
 
   .image-bg {
@@ -2490,10 +2489,6 @@ footer {
     left: 22%;
   }
 
-  .about-slider .slick-dots {
-    bottom: 60%;
-  }
-
   .preview .description p {
     font-size: 12px;
   }
@@ -2513,6 +2508,10 @@ footer {
     width: 45px;
     bottom: -10%;
     right: 5px;
+  }
+
+  .swiper-container .swiper-pagination-bullets {
+    bottom: 64%;
   }
 
   .image-bg {
@@ -2542,16 +2541,15 @@ footer {
     left: 22%;
   }
 
-  .about-slider .slick-dots {
-    bottom: 67%;
+  .swiper-container .swiper-pagination-bullets {
+    bottom: 69%;
   }
 
-  .slider-bg .slide-preview {
+  .wr-slider .slider-bg .slide-preview {
     width: 235px;
     height: 300px;
   }
-
-  .our-description h4 {
+  .wr-slider .our-description h4 {
     text-align: center;
   }
 }
