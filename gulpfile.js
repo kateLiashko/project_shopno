@@ -40,14 +40,14 @@ function styles() {
 }
 
 function images() {
-    return src('app/media/image/**/*')
-    .pipe(newer('app/media/imagesmin/'))
+    return src('app/media/src/**/*')
+    .pipe(newer('app/media/image/'))
     .pipe(imagemin())
-    .pipe(dest('app/media/imagesmin/'));
+    .pipe(dest('app/media/image/'));
 }
 
 function cleanimg() {
-    return del('app/media/imagesmin/**/*', { force: true });
+    return del('app/media/image/**/*', { force: true });
 }
 
 function cleandist() {
@@ -59,7 +59,7 @@ function buildcopy() {
         'app/styles/css/**/*min.css',
         'app/fonts/**/*',
         'app/js/**/*.min.js',
-        'app/media/imagesmin/**/*',
+        'app/media/image/**/*',
         'app/**/*.html',
         ], { base: 'app' })
         .pipe(dest('dist'));
