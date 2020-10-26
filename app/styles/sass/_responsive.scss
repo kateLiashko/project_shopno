@@ -357,6 +357,13 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
+    .header {
+            nav {
+                li {
+                font-size: 18px;
+            }
+        }
+    }
     .swiper-container {
         padding-bottom: 0;
         & .swiper-pagination-bullets {

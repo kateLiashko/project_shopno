@@ -45,17 +45,21 @@ $("#menu-burger").on("click", "a", function (event) {
   $('body,html').animate({scrollTop: top}, 900);
 });
 
-$("#home").on("click", "a", function (event) {
-  event.preventDefault();
-  let id  = $(this).attr('href'),
-      top = $(id).offset().top - 75 + 'px';
-  $('body,html').animate({scrollTop: top}, 900);
-});
+//$("#home").on("click", "a", function (event) {
+  //event.preventDefault();
+  //let id  = $(this).attr('href'),
+      //top = $(id).offset().top - 75 + 'px';
+ // $('body,html').animate({scrollTop: top}, 900);
+//});
 
 
 /*slider swiper section-about-us*/
 
 var swiper = new Swiper('.swiper-container', {
+  autoplay: {
+    delay: 4000,
+  },
+  loop: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,

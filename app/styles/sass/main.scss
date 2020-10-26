@@ -943,6 +943,7 @@ footer {
     background-image: url("../../media/image/bg.footer.png");
     background-color: #fff;
     background-position: center;
+    background-size: cover;
     position: relative;
     padding-bottom: 110px;
     &::after {
@@ -1113,18 +1114,22 @@ footer {
         }
     }
     & .icon-pinterest {
+        display: flex;
         height: 23px;
         fill: #8a8a8a;
     }
     & .icon-twitter {
+        display: flex;
         height: 22px;
         fill: #8a8a8a;
     }
     & .icon-facebook {
+        display: flex;
         height: 23px;
         fill: #8a8a8a;
     }
     & .icon-website {
+        display: flex;
         height: 21px;
         fill: #8a8a8a;
     }

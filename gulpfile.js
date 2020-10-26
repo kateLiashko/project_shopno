@@ -59,7 +59,7 @@ function buildcopy() {
         'app/styles/css/**/*min.css',
         'app/fonts/**/*',
         'app/js/**/*.min.js',
-        'app/media/**/*',
+        'app/media/imagesmin/**/*',
         'app/**/*.html',
         ], { base: 'app' })
         .pipe(dest('dist'));

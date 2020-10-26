@@ -1353,6 +1353,7 @@ footer {
   background-image: url("../../media/image/bg.footer.png");
   background-color: #fff;
   background-position: center;
+  background-size: cover;
   position: relative;
   padding-bottom: 110px;
 }
@@ -1524,18 +1525,22 @@ footer {
   fill: #000;
 }
 .social .icon-pinterest {
+  display: flex;
   height: 23px;
   fill: #8a8a8a;
 }
 .social .icon-twitter {
+  display: flex;
   height: 22px;
   fill: #8a8a8a;
 }
 .social .icon-facebook {
+  display: flex;
   height: 23px;
   fill: #8a8a8a;
 }
 .social .icon-website {
+  display: flex;
   height: 21px;
   fill: #8a8a8a;
 }
@@ -1861,6 +1866,10 @@ footer {
 .wr-clients {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  .header nav li {
+    font-size: 18px;
   }
 
   .swiper-container {
