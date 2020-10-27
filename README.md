@@ -1,13 +1,13 @@
 ## About The Project
-* This is a corporate agency website. It can also be adapted to such service areas as marketing, travel, training and others. <br>
-The site has a mobile version. The home page includes a fixed burger-menu, two sliders, a gallery, section with CSS Grid Layout and popUp windows. <br>
+* This is a corporate agency website. It can also be adapted to such service areas as marketing, travel, training and others. The site has a mobile version.<br>
+The home page includes a fixed burger-menu, two sliders, a gallery, section with CSS Grid Layout and popUp windows. <br>
 :link: https://kateliashko.github.io/project_shopno/dist/index.html <br>
 * The site has a second page. The page was developed using the Bootstrap-4.<br>
 You can go to the second page by clicking the "CONTACT US" button in the first section or follow the link: <br>
 :link: https://kateliashko.github.io/project_shopno/dist/contact.html <br>
 ## Used
-* HTML5
-* CSS3
+* HTML5 / CSS3
+* Sass
 * Grid CSS
 * JavaScript
 * jQuery 
