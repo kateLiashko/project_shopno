@@ -39,15 +39,15 @@ function styles() {
     .pipe(browserSync.stream());
 }
 
-function styles() {
-    return src('app/styles/sass/contact.scss')
-    .pipe(sass())
-    .pipe(concat('contact.min.css'))
-    .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
-    .pipe(cleancss(( {level: { 1: { specialComments: 0 } }/*, format: 'beautify' */ } )))
-    .pipe(dest('app/styles/css/'))
-    .pipe(browserSync.stream());
-}
+//function styles() {
+    //return src('app/styles/sass/contact.scss')
+    //.pipe(sass())
+    //.pipe(concat('contact.min.css'))
+    //.pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
+    //.pipe(cleancss(( {level: { 1: { specialComments: 0 } }/*, format: 'beautify' */ } )))
+    //.pipe(dest('app/styles/css/'))
+    //.pipe(browserSync.stream());
+//}
 
 function images() {
     return src('app/media/src/**/*')

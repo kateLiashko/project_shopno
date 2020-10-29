@@ -123,6 +123,7 @@
                 text-align: center;
                 margin: 0;
                 padding-top: 100px;
+                padding-left: 0;
                 background-color: #eff0f2;
                 transition-duration: 0.5s;
                 z-index: 40;
@@ -310,9 +311,11 @@
         height: 360px;
         overflow: hidden;
         margin-bottom: 10px;
-        a:hover {
-            opacity: 0.7;
-            transition: 0.5s;
+        a{
+            &:hover {
+                opacity: 0.7;
+                transition: 0.5s;
+            }
         }
     }
 }
@@ -589,8 +592,41 @@
             opacity: 1;
             transition: .5s;                
         }
+        &:focus {
+            outline: none;
+        }
         
     }
+    & .slick-slide {
+        &:focus {
+            outline: none;
+        }
+    }
+    & .slick-dots {
+        width: 30%;
+        bottom: -50px;
+        left: 34%;
+        & .slick-active {
+            background-color: #71f6eb;
+        }
+        li {
+            width: 10px;
+            height: 10px;
+            margin: 0 2px;
+            background-color: #d0d0d0;
+            border-radius: 30%;
+            &:hover {                    
+                cursor: pointer;
+            }
+        button {
+            &::before{
+                content: '';
+                opacity: 0; 
+            }
+        }
+        }
+    }
+
 }
 .worker-feedback {
     box-sizing: border-box;
@@ -999,6 +1035,12 @@ footer {
                 background-color: rgba(225, 225, 225, 0.5);
             }
         }
+        span {
+            font-family: "RalewayReg", sans-serif;
+            font-size: 13px;
+            color: #a80909;
+            display: none;
+        }
         textarea {
             resize: none;
             padding-top: 10px;
@@ -1022,7 +1064,12 @@ footer {
                 outline: none;
                 box-shadow: 0 0 10px #6eeee4;
             }
-        }        
+        } 
+        & .error-message {
+            span {
+                display: block;
+            }
+        }       
     }
 }
 .contact-map {

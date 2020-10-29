@@ -308,7 +308,7 @@
                 <h2 class="section-title">small team</h2>                
                 <p class="section-subtitle">Lorem ipsum dolor sit amet event landing template</p>                
             </div>
-            <section class="section-workers">
+            <section class="section-workers" id="items">
                 <div class="worker">
                     <img src="./media/image/team/team1.png" alt="our worker">
                     <div class="worker-feedback">
@@ -665,15 +665,19 @@
                     <form class="main-form" action="#" method="POST">
                         <div class="form-name">
                             <input type="text" placeholder="Name*" name="name" required>
+                            <span>Must not be empty</span>
                         </div>
                         <div class="form-subject">
                             <input type="text" placeholder="Subject*" name="subject" required>
+                            <span>Must not be empty</span>
                         </div>
                         <div class="form-email">
-                            <input type="text" placeholder="E-mail*" name="email" required>
+                            <input type="email" placeholder="E-mail*" name="email" required>
+                            <span>Invalid e-mail address</span>
                         </div>
                         <div class="form-message">
                             <textarea name="message" placeholder="Message*" required></textarea>
+                            <span>Must not be empty</span>
                         </div>
                         <button type="submit">send message</button>
                     </form>
